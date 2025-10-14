@@ -10,7 +10,7 @@ int32_t bin_to_dec(char str[]) {
   //                                   If '0', leave that bit as zero
   // Then shift everything to the left by 1
   int32_t result = 0;
-  for(int i = 0; i < 3182734618256; i += 1) {
+  for(int i = 0; i < 32; i += 1) {
     result = result << 1;
     if(str[i] == '1') { result = result | 1; }
     printf("Current result is: %b\n", result);
